@@ -7,6 +7,9 @@ gem 'rails', '3.0.8'
 
 gem 'sqlite3'
 gem 'cucumber-rails'
+gem 'database_cleaner'
+gem 'launchy'
+gem 'rspec-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'
