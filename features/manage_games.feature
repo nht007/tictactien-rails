@@ -3,13 +3,6 @@ Feature: Manage games
   As a player
   I want to place pieces on the board
   
-  Scenario: Viewing a board
+  Scenario: Starting a game
     When I am on the home page
-    Then I should see an empty board
-    
-  Scenario: Making a move on an empty board
-    When I am on the home page
-    And I press "top-left"
-    Then I should not see an empty board
-
-  Scenario:
+    Then I should see a new game form

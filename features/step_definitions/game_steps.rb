@@ -1,15 +1,7 @@
-Then /^I should see an empty board$/ do
+Then /^I should see a new game form$/ do
   if page.respond_to? :should
-    page.should have_content("")
+    page.should have_content("New Game")
   else
-    assert page.has_content?("")
-  end
-end
-
-Then /^I should not see an empty board$/ do
-  if page.respond_to? :should
-    page.should have_content("x")
-  else
-    assert page.has_content?("x")
+    assert page.has_content?("New Game")
   end
 end

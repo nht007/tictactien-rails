@@ -2,14 +2,11 @@ class HomeController < ApplicationController
   respond_to :html
 
   def index
-    player = Tictactien.create_player(Tictactien::HUMAN, 'x')
-    game_state = Tictactien.create_new_game(player)
+    game = Tictactien.new_game
+    game.choose_player_one(params[:player_one])
+    game.choose_player_two(params[:player_two])
     
-    @board = game_state.board.grid
-        
-#    if (params[:board_input])
-#      @board = params[:board_input]
-#    end
+    game.start
     
     respond_to do |format|
       format.html
