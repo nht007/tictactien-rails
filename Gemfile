@@ -10,6 +10,7 @@ gem 'cucumber-rails'
 gem 'database_cleaner'
 gem 'launchy'
 gem 'rspec-rails'
+gem 'tictactien-gem'
 
 # Use unicorn as the web server
 # gem 'unicorn'

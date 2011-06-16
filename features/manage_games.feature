@@ -11,3 +11,5 @@ Feature: Manage games
     When I am on the home page
     And I press "top-left"
     Then I should not see an empty board
+
+  Scenario:
