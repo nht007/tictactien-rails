@@ -1,7 +1,7 @@
 <%= form_tag(game_path, :method => "post") do %>
 <div class="actions">
-  <%= select_tag("Player One", options_for_select(['Human', 'RandomCPU', 'PerfectCPU'], 'Human'))%>
-  <%= select_tag("Player Two", options_for_select(['Human', 'RandomCPU', 'PerfectCPU'], 'Human'))%>
+  <%= select_tag("player_one", options_for_select(['Human', 'RandomCPU', 'PerfectCPU'], 'Human'))%>
+  <%= select_tag("player_two", options_for_select(['Human', 'RandomCPU', 'PerfectCPU'], 'Human'))%>
   <%= submit_tag("Start New Game") %>
 </div>
 <% end %>

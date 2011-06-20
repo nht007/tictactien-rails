@@ -1,0 +1,10 @@
+<%= form_tag(game_path, :method => "post") do %>
+<div class="actions">
+  <%= hidden_field_tag("game_id", @game_id) %>
+  <% if player == "HumanPlayer" %>
+  <%= select_tag("row", options_for_select(['1', '2', '3'], '1'))%>
+  <%= select_tag("column", options_for_select(['1', '2', '3'], '1'))%>
+  <% end %>
+  <%= submit_tag("Continue") %>
+</div>
+<% end %>

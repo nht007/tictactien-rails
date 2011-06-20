@@ -9,9 +9,14 @@ Feature: Manage games
     
   Scenario: Starting a new Human vs Human game
     When I am on the home page
-    And I select "Human" from "Player One"
-    And I select "Human" from "Player Two"
+    And I select "Human" from "player_one"
+    And I select "Human" from "player_two"
     And I press "Start New Game"
-    Then show me the page
-    And I should see an empty grid
+    Then I should see an empty grid
 
+  Scenario: Updating a Human vs Human game in progress
+    Given a new game
+    When I select "2" from "row"
+    And I select "2" from "column"
+    And I press "Continue"
+    And I should get a non-empty grid

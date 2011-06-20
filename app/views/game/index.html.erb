@@ -1,1 +1,7 @@
-Tic-Tac-Tien
+<%= link_to 'Tic-Tac-Tien', root_path %>
+<div style="font-family: monospace;"><%= simple_format(@board) %></div>
+<% if @winner %>
+Player '<%= @winner %>' wins!
+<% else %>
+<%= render 'form', :player => @player %>
+<% end %>
