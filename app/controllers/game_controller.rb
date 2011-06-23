@@ -1,4 +1,5 @@
 class GameController < ApplicationController
+  before_filter :require_user
   respond_to :html
 
   def index

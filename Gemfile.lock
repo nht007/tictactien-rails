@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/jjb/authlogic.git
+  revision: e5adbafa25c9bb14c0fd6ef80b8a649549c79be1
+  specs:
+    authlogic (2.1.6)
+      activesupport
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -124,6 +131,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  authlogic!
   cucumber-rails
   database_cleaner
   launchy

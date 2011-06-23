@@ -1,0 +1,28 @@
+<%= form_for @user_session, :as => :user_session, :url => { :action => "create" } do |f| %>
+    <% if @user_session.errors.any? %>
+        <div id="error_explanation">
+            <h2><%= pluralize(@user_session.errors.count, "error") %> prohibited this user_session from being saved:</h2>
+            
+            <ul>
+                <% @user_session.errors.each do |attr, msg| %>
+                    <li><span class="attr"><%= attr %></span> <%= msg %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+    
+    <div class="field">
+        <%= f.label :login %><br />
+        <%= f.text_field :login %>
+    </div>
+    <div class="field">
+        <%= f.label :password %><br />
+        <%= f.password_field :password %>
+    </div>
+    <div class="field">
+        <%= f.check_box(:remember_me, {:checked => true}) %><%= f.label :remember_me %><br />
+    </div>
+    <div class="actions">
+        <%= f.submit(:value => "Login") %>
+    </div>
+<% end %>

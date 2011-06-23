@@ -11,6 +11,7 @@ gem 'database_cleaner'
 gem 'launchy'
 gem 'rspec-rails'
 gem 'tictactien-gem'
+gem "authlogic", :git => "git://github.com/jjb/authlogic.git"
 
 # Use unicorn as the web server
 # gem 'unicorn'
