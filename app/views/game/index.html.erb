@@ -1,5 +1,6 @@
+<%= stylesheet_link_tag "application" %>
 <%= link_to 'Tic-Tac-Tien', root_path %>
-<div style="font-family: monospace;"><%= simple_format(@board) %></div>
+<div id="board"><%= simple_format(@board) %></div>
 <% if @winner %>
 Player '<%= @winner %>' wins!
 <% else %>

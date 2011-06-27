@@ -1,0 +1,9 @@
+#board {
+  font-family: monospace;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+#board p {
+  margin: 0;
+}
